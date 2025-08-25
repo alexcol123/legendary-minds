@@ -22,7 +22,7 @@ import {
 
 export default function ConsultantsPage() {
   // Webhooks
-  const webhookUrl = process.env.N8N_WEBHOOK_URL;
+  const webhookUrl = process.env.N8N_WEBHOOK_URL as string;
 
   // State
   const [isPlaying, setIsPlaying] = useState(false);
