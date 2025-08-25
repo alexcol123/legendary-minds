@@ -26,7 +26,7 @@ export default function AxelPage() {
 
     try {
       // Simulate checking password (in real app, you'd use process.env.PASSWORD)
-      const correctPassword = process.env.NEXT_PUBLIC_AXEL_PASSWORD;
+      const correctPassword = process.env.NEXT_PUBLIC_AXEL_PW;
 
       // Add a small delay for better UX
       await new Promise((resolve) => setTimeout(resolve, 1500));
