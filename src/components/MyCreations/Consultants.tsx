@@ -22,8 +22,7 @@ import {
 
 export default function ConsultantsPage() {
   // Webhooks
-  const webhookUrl =
-    "http://localhost:5678/webhook/77e79a9a-2a5b-4c39-9365-e3e18b10c37f";
+  const webhookUrl = process.env.N8N_WEBHOOK_URL;
 
   // State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -746,9 +745,7 @@ Remember: You must be ruthlessly concise. 80-120 words MAXIMUM. Count as you go.
 
               {/* Consultants Specializations */}
               <div className="border rounded-xl  border-amber-300/50 p-2">
-                <h2 className="text-2xl text-white">
-                  Choose Specialization
-                </h2>
+                <h2 className="text-2xl text-white">Choose Specialization</h2>
                 <div className="flex justify-between my-4">
                   <Button
                     className={
